@@ -1,0 +1,370 @@
+/*
+teal =#158981
+teal-dark =#0e5c5d
+blue = #B8E6E4
+orange = #FA6107
+lighter orange = #fb7120
+Font: 
+'Lora'400,500,600,700 &em
+'Raleway' 100, 200,300,400,600,600&em
+'Roboto' 100,300,400
+
+@media (max-width: 36em)	Max 576px	_xs-*
+@media (max-width: 48em)	Max 768px	_sm-*
+@media (max-width: 64em)	Max 1024px	_md-*
+@media (max-width: 80em)	Max 1280px	_lg-*
+*/
+
+*{
+    padding:0%;
+    margin:0 0;
+    box-sizing:border-box;
+}
+
+img{max-width: 100%;}
+
+[class*=grid]{margin:0;}
+
+html{scroll-behavior: smooth;}
+
+/*Temporary Style
+    *{
+        border:2px solid rgb(220,220,220)
+    }
+
+html,
+body {border:2px solid blue}
+.bg-image{border: 2px green solid;}
+
+h1,h2,h3,h4,h5,h6,p{
+    border:2px solid red
+}
+
+end temporary style*/
+
+/*utlity classes*/
+
+.padded         {padding:5%}
+.padded-1       {padding:1rem}
+.padded-2       {padding:2rem}
+.padded-b-0     {padding-bottom:0%;}
+
+.left       {text-align: left;  }
+.center     {text-align: center;}
+.right      {text-align: right; }
+
+.subtle{
+    opacity:0.8;
+    font-size:0.8rem;   
+}
+
+span        {display: block;}
+
+.tall-10    {min-height:10vh;   }
+.tall-20    {min-height:20vh;   }
+.tall-30    {min-height:30vh;   }
+.tall-40    {min-height:40vh;   }
+.tall-50    {min-height:50vh;   }
+.tall-60    {min-height:60vh;   }
+.tall-70    {min-height:70vh;   }
+.tall-80    {min-height:80vh;   }
+.tall-90    {min-height:90vh;   }
+
+.text-lg    {font-size: 3.5rem; }
+.text-xl    {font-size: 5rem;   }
+.text-xxl   {font-size: 6rem;   }
+
+/*Typography*/
+.light-text{color: white;}
+
+h1,h2,h3,h4,h5,h5{
+    font-family:'Raleway', 'roboto', sans-serif;
+    font-weight: 400;
+}
+
+p{
+    font-family:'Roboto', 'raleway', sans-serif;
+    font-weight:300;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1.1rem;
+    opacity: 0.9;
+}
+
+p,
+h1,h2,h3,h4,h5,h6:last-child{
+    margin-bottom:0;
+}
+
+a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color:#fb7120;
+}
+
+h1{
+    font-weight: 200;
+    font-size:7em;
+    color:white;
+    line-height: 0.8;
+    text-transform: uppercase;
+}
+.seafood{padding-top: 20%;}
+h1 span{
+    font-family:'Roboto', 'raleway', sans-serif;
+    padding-top: 0;
+    display: block;
+    margin-right:-0.8em;
+    font-weight: 500;
+    font-size:.65em;
+    line-height: 0.8;
+    color:#FA6107;
+    text-transform: lowercase;
+    opacity:1;
+}
+.now{
+    padding-top:1rem;
+    padding-bottom:0em;
+    font-weight: 500;
+    font-size:3em;
+    line-height: 0.8;
+    color:#FA6107;
+    text-transform: uppercase;
+}
+
+h2{
+    font-size:3rem;
+    font-weight:400;
+    text-transform: uppercase;
+}
+
+h3{
+    font-family:'Lora', 'roboto', sans-serif;
+    font-size:1.6rem;
+    font-weight:600;
+    text-transform: uppercase;
+}
+
+h4{
+    font-family:'Lora', 'roboto', sans-serif;
+    font-size:1.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color:#FA6107;
+}
+
+.about p    {
+    color:rgb(90, 90, 90);
+    padding-right:5%;
+}
+.about h2{
+    padding-top:2rem;
+    padding-bottom: 2rem;
+    color:#0e5c5d;
+}
+
+.text-hire h2{
+    font-weight:300;
+}
+
+.text-hours{
+    font-style: normal;
+    font-size:2rem;
+    text-transform: uppercase;
+    padding-bottom: 1.2rem;
+}
+
+.days{
+    font-family:'Raleway','martel', sans-serif;
+    font-style:italic;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 0rem;
+    padding-bottom: 1rem;
+    padding-top:1rem;
+    opacity: 1;
+}
+
+.times{
+    font-family:'roboto';
+    font-weight:200;
+    font-size: 1.1rem;
+    font-weight:300;
+}
+
+.icon h3    {padding-bottom:0.8rem;   }
+
+.fa-fish    {font-size:2rem;        }
+ 
+.fa-phone,
+.fa-envelope, 
+.fa-map     {
+    padding-right: .5rem;
+    display:inline;  
+
+} 
+/*header and footer*/
+footer   {text-align: left;  } 
+
+footer a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color:#FA6107;
+}
+
+
+
+/*Images and backgrounds*/
+.arch{
+    border-radius: 40rem 40rem 0rem 0rem ;
+}
+
+.icon{padding:5%}
+
+.icon img{
+    max-width:10rem;
+    margin:1rem 0rem;
+}
+
+/*bounding box*/
+.hours {
+    margin:5% 5% 5% -12.3333%;
+    padding:10% 0% 10% 0%;
+}
+
+.bg-light{background-color: #E7F8F7;}
+.bg-dark{background-color: #158981;}
+.bg-darker{background-color: #0f5c5d;}
+
+.bg-image{
+    background-position: center;
+    background-size: cover;
+    background-color: #158981;
+    background-repeat: no-repeat;
+    background-image: url(/Images/fish.jpg);
+}
+
+.bg-hours{
+    background-image: url(/Images/fish.jpg);
+    background-position: 50% 75% ;}
+.bg-hire{
+    background-image: url(/Images/now_hiring.png);
+    background-position: 50% 20% ;}
+.bg-map{
+    background-image: url(/Images/Map_norwood.png);
+    background-position: 100% 50% ;
+}
+.bg-header1{
+    background-image: url(/Images/seafood_on_parade.jpg);
+}
+.bg-family{background-image: url(/Images/family.jpg);}
+
+
+.hidden{display:none;}
+
+/*Max 1440px	_custom-header-break*/
+@media (max-width: 90em){
+    .seafood    {font-size:6em;}
+}
+/*	Max 1280px	_lg-*/
+@media (max-width: 80em){
+    .seafood    {font-size:4.7em;}
+    h1 span    {font-size:.7em;}
+}
+
+/*Max 1024px	_md-  */
+@media (max-width: 64em){
+    .seafood{
+        font-size:4em;
+        margin-right:-0.6em;
+        padding-top: 90%;
+    }
+    .arch{
+        border-radius: 30rem 30rem 0rem 0rem ;
+    }
+
+    .now{font-size:2.4rem;}
+    .text-hire h1{font-size:5em;}
+    .text-hire h2{
+        font-size:2.4rem;
+        font-weight:300;
+    }
+
+    .about p{padding-right:0;}
+}
+
+/*Max 768px	_sm*/
+@media (max-width: 48em){
+    .seafood{
+        font-size:3.5em;
+        padding-top:80%;
+    }
+    h4{font-size: 1rem;}
+    h3{font-size:1.3rem ;}
+    .icon h3{padding-bottom: 0.4rem;}
+    h1{font-size: 4rem;}
+
+    .text-hours{font-size:1.6rem;}
+    .days{font-size:1.2rem;}
+    .now{font-size:2.4rem;}
+    .text-hire h1{font-size:4em;}
+    .text-hire h2{
+        font-size:2rem;
+        line-height: 1em;
+        font-weight:300;
+    }
+}
+
+/*Max 576px	_xs*/
+@media (max-width: 36em){
+    .seafood{
+        font-size:3.25em;
+        padding-top:70%;
+    }
+
+    .about h2{padding:0.6rem 0 0.6rem 0;}
+    .about{
+        padding-left:5%;
+        padding-right: 5%;
+    }
+    .text-hire p{
+        padding-left:5%;
+        padding-right: 5%;
+    }
+    .about p{text-align: center;}
+    .icon{padding:0;}
+    
+    .hours{
+        padding:10% 5%;
+        margin:0%;
+        }
+
+    .hidden{display:inline-block;}
+    .hidden-small{display: none;}
+
+    .bg-blue{
+        background-color:white;
+        color:#0e5c5d;
+    }   
+
+    .hire-contact p{padding-bottom:0;}
+    .now{font-size:2rem;}
+    .text-hire h1{font-size:3.25em;}
+    .text-hire h2{
+        font-size:1.6rem;
+        line-height: 1em;
+        font-weight:300;
+    }
+}
+
+/*Max 464px	_xxs*/
+@media (max-width: 29em){
+    .seafood{margin-right:-1.5em;}
+    h1 span{margin-right:-.5em;}
+}
+
+/*Max 352px	_xxxs*/
+@media (max-width: 22em){
+    .seafood{font-size:3em;}
+}
