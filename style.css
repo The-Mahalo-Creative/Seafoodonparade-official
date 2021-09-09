@@ -214,8 +214,6 @@ footer a{
     color:#FA6107;
 }
 
-
-
 /*Images and backgrounds*/
 .arch{
     border-radius: 40rem 40rem 0rem 0rem ;
@@ -226,6 +224,10 @@ footer a{
 .icon img{
     max-width:10rem;
     margin:1rem 0rem;
+}
+.logo img{
+    max-width:100%;
+    padding:5%;
 }
 
 /*bounding box*/
@@ -260,6 +262,7 @@ footer a{
     background-image: url(/Images/seafood_on_parade.jpg);
 }
 .bg-family{background-image: url(/Images/family.jpg);}
+
 
 
 .hidden{display:none;}
@@ -356,6 +359,11 @@ footer a{
         font-size:1.6rem;
         line-height: 1em;
         font-weight:300;
+    }
+
+    .logo img{
+        max-width:90%;
+        padding: 0 5% 5% 5%;
     }
 }
 
