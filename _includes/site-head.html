@@ -1,0 +1,43 @@
+ <!--------------------- SEO Metadata ----------------------->
+ <title> {{ page.seo.title | default: site.data.site-settings.seo.title }} </title> 
+ <meta name="description" content="{{ page.seo.description | default: site.data.site-settings.seo.description }}">
+ <meta name="keywords" content="{{ page.seo.keywords | default: site.data.site-settings.seo.keywords }}">
+
+ {% if page.seo.hide-from-google == true %}
+     <meta name="robots" content="noindex, nofollow">
+ {% else %}
+     <meta name="robots" content="index, follow">
+ {% endif %}
+
+ <!-- Viewport meta tag --> 
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+ <meta name="robots" content="noindex, nofollow" />
+
+ <!-- meta data to tell the browser that your device is responsive 
+ <meta name="robots" content="index, follow" />-->
+ <meta name="mobile-web-app-capable" content="yes" />
+ <meta name="apple-mobile-web-app-capable" content="yes" />
+ <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+
+ <!--  Social media sharing META Tags -->
+ <meta property="og:title" content="Seafood on Parade" />
+ <meta property="og:description" content="A local seafood company operating in the Norwood area for many years, Peter and Koula have a loyal customer base thanks to their friendly service and the freshness of the seafood. Now trading as Seafood on Parade, their commitment to providing an excellent range of fresh seafood is as strong as ever. Whether it’s fish, oysters, prawns or lobster, you can be assured of the quality." />
+ <meta property="og:image" content="/Images/logo.jpg" />
+ <meta property="og:url" content="/" />
+ <meta property="og:site_name" content="Seafood on Parade" /> 
+ <!-- end of meta tags -->
+
+ <!-- Gridlex -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css" />
+
+ <!-- Fontawesome -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+ <!-- Google Fonts  -->
+ <link rel="preconnect" href="https://fonts.googleapis.com" />
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+ <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap" rel="stylesheet" />
+ 
+ <!-- My own custom stylesheet -->
+ <link rel="stylesheet" href="/style.css" />

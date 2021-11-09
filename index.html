@@ -1,48 +1,30 @@
-<html>
-    <head>
-        <!-- Meta data for SEO purposes. -->
-        <!-- The title for SEO & browser tabs -->
-        <title> Seafood on Parade </title>
-        <meta name="description" content="A local seafood company operating in the Norwood area for many years, Peter and Koula have a loyal customer base thanks to their friendly service and the freshness of the seafood. Now trading as Seafood on Parade, their commitment to providing an excellent range of fresh seafood is as strong as ever. Whether it’s fish, oysters, prawns or lobster, you can be assured of the quality." />
-        <meta name="keywords" content="">
+---
+layout: default
+title: Seafood on Parade
+now-hiring: false
+open-times:
+ - days: Mon - Wed
+   times: 8am - 5.30pm
+ - days: Thurs
+   times: 8am - 8pm
+ - days: Fri
+   times: 8am - 5.30pm
+ - days: Sat
+   times: 8am - 5.00pm
+ - days: Sun
+   times: 11am - 5.00pm
 
-        <!-- Viewport meta tag --> 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+seo:
+ title: Seafood on Parade
+ description:
+ social_image: 
+ twitter_card:
+ twitter_description:
+ keywords:
+ hide-from-google: true
+---
 
-        <meta name="robots" content="noindex, nofollow" />
-
-        <!-- meta data to tell the browser that your device is responsive 
-        <meta name="robots" content="index, follow" />-->
-        <meta name="mobile-web-app-capable" content="yes" />
-        <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-
-        <!--  Social media sharing META Tags -->
-        <meta property="og:title" content="Seafood on Parade" />
-        <meta property="og:description" content="A local seafood company operating in the Norwood area for many years, Peter and Koula have a loyal customer base thanks to their friendly service and the freshness of the seafood. Now trading as Seafood on Parade, their commitment to providing an excellent range of fresh seafood is as strong as ever. Whether it’s fish, oysters, prawns or lobster, you can be assured of the quality." />
-        <meta property="og:image" content="/Images/logo.jpg" />
-        <meta property="og:url" content="/" />
-        <meta property="og:site_name" content="Seafood on Parade" /> 
-        <!-- end of meta tags -->
-
-        <!-- Gridlex -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css" />
-
-        <!-- Fontawesome -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-        <!-- Google Fonts  -->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap" rel="stylesheet" />
-        
-        <!-- My own custom stylesheet -->
-        <link rel="stylesheet" href="/style.css" />
-
-    </head>
-    <body> 
-
-        <!----Top header---->
+<!----Top header---->
         <header class="grid-center bg-image bg-header1 tall-90 ">
             <div class="col-5_sm-6_xs-8 right ">
             <h1 class="seafood">Seafood <span>on parade</span></h1>   
@@ -103,103 +85,28 @@
                 <div class="col-9_lg-11_sm-12 bg-dark padded hours light-text center">
                     <p><i class="fas fa-fish"></i></p>
                     <h3 class="text-hours">Open Hours</h3>
+                    {% for item in page.open-times %}
                     <p class="days editable">
-                        Mon - Wed
+                        {{item.days}}
                     </p>
                     <p class="times editable">
-                        8am - 5.30pm
+                        {{item.times}}
                     </p>  
-                    <p class="days editable">
-                        Thu
-                    </p>
-                    <p class="times editable">
-                        8am - 8pm
-                    </p>
-                    <p class="days editable">
-                        Fri
-                    </p>
-                    <p class="times editable">
-                        8am - 5.30pm
-                    </p> 
-                    <p class="days editable">
-                        Sat
-                    </p>
-                    <p class="times editable">
-                        8am - 5pm
-                    </p>              
-                    <p class="days editable">
-                        Sun
-                    </p>
-                    <p class="times editable">
-                        11am - 5pm
-                    </p>
+                    {% endfor %}
                 </div>    
             </div>
         </section>
 
-        <!----Now Hiring--
-        <section class="grid-center padded">
-            <div class="col-12 bg-dark bg-image bg-hire tall-60"></div>
-            <div class="grid col-12 bg-dark light-text text-hire">
-                <div class="col-12 padded padded-b-0 center">
-                    <p class="now">now</p> 
-                    <h1>Hiring</h1>
-                    <h2>Want to be part of the team?</h2> 
-                </div>
-                <div class="col-12-middle center padded padded-b-0">
-                    <p>We are currently looking for new faces to join our team on casual and part-time basis to fill over the counter service roles and assist with back of house duties. </p>
-                    <p>We are looking for reliable, enthusiastic and motivated people who are willing to learn new skills and are flexible with working hours. Previous experience in customer service and/or preparation of fresh food desirable but not essential, as training is provided. </p>
-                    <p>We offer a very competitive wage and a fun, friendly, and energetic working environment. Give us a call and ask for Peter or Koula, or come by and drop your resumè off in store. We would love to hear from you!</p>
-                </div>
-                <div class="hire-contact padded col-12 center">
-                    <div class="grid ">
-                        <div class="col-6_xs-12">
-                            <h4><i class="fas fa-envelope"></i> Email us @</h4>
-                            <p><em>Your resume and cv</em></p>
-                            <a href="Mailto:seafoodonparade@gmail.com">seafoodonparade@gmail.com</a>
-                        </div>
-                        <div class="col-6_xs-12">
-                            <h4><i class="far fa-map"></i> Or Visit us</h4>
-                            <p><em>Our personal favourite</em></p>
-                            <a href="https://www.google.com/maps/place/Seafood+On+Parade/@-34.9210328,138.6143018,15z/data=!4m5!3m4!1s0x0:0x9603e5a84f46313a!8m2!3d-34.9204055!4d138.6354315">The Parade, Norwood, <span>South Australia 5067</span></a>
-                        </div>    
-                    </div>
-                </div>
-            </div>
-        </section> 
-        -->
+        <!----Now Hiring-->
+        {% if page.now-hiring == true %}
+        {% include now-hiring.html %}
+        {% endif %}
+
         <!---Map---->
         <section class="grid tall-60">
             <div class="col-12 bg-image bg-map"></div>
         </section>
 
         <!---footer---->
-        <footer class="grid padded padded-b-0 ">
-            <div class="col-12 grid">
-                <div class="col-6_xs-12-middle center logo">
-                    <img src="/Images/logo.png" alt="seafood on parade" />
-                </div>
-                <nav class="col-6_xs-12-middle grid ">
-                    <div class="col-2 padded-l-5">
-                        <h4><i class="far fa-map"></i></h4>
-                    </div>
-                    <div class="col-10">
-                        <h4> Find Us</h4>
-                        <a href="https://www.google.com/maps/place/Seafood+On+Parade/@-34.9210328,138.6143018,15z/data=!4m5!3m4!1s0x0:0x9603e5a84f46313a!8m2!3d-34.9204055!4d138.6354315">The Parade, Norwood, <br /> South Australia 5067</a>
-                    </div>
-                    <div class="col-2 padded-l-5">
-                        <h4><i class="fas fa-phone"></i></h4>
-                    </div>
-                    <div class="col-10">
-                        <h4> Call Us</h4>
-                        <a href="Tel:0883330393">08 8333 0393</a>
-                        </div>
-                </nav>
-            </div>
-            <div class="col-12 center padded-t">
-                <p class="subtle"><em>Copyright 2021</em></p>
-            </div>
-        </footer>
+        {% include footer.html %}
     
-    </body>
-</html>
