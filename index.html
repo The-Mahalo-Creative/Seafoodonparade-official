@@ -30,14 +30,14 @@ seo:
 
 <!----Top header---->
         <header class="grid-center bg-image bg-header1 tall-90 ">
-            <div class="col-5_sm-6_xs-8 right capped-width-lg">
+            <div class="col-5_sm-6_xs-8 right">
             <h1 class="seafood">Seafood <span>on parade</span></h1>   
             </div>
             <div class="col-6_sm-6_xs-4"></div>
         </header>
         
         <!----About Us---->
-        <section class="grid-center padded capped-width-lg">
+        <section class="grid-center padded">
             <div class="col-6_lg-5_md-12-middle about">
                 <h2 class="center">About Us</h2>
                 <p class="editable">
@@ -83,23 +83,21 @@ seo:
         </section>
 
         <!---Hours---->
-        <section class="bg-light">
-            <div class="grid capped-width-lg">
-                <div class="bg-image bg-hours col-7_xs-12 tall-70"></div>
-                <div class="col-5_xs-12-middle grid">
-                    <div class="col-9_lg-11_sm-12 bg-dark padded hours light-text center">
-                        <p><i class="fas fa-fish"></i></p>
-                        <h3 class="text-hours">Open Hours</h3>
-                        {% for item in page.open-times %}
-                        <p class="days editable">
-                            {{item.days}}
-                        </p>
-                        <p class="times editable">
-                            {{item.times}}
-                        </p>  
-                        {% endfor %}
-                    </div>    
-                </div>
+        <section class="grid bg-light">
+            <div class="bg-image bg-hours col-7_xs-12 tall-70"></div>
+            <div class="col-5_xs-12-middle grid">
+                <div class="col-9_lg-11_sm-12 bg-dark padded hours light-text center">
+                    <p><i class="fas fa-fish"></i></p>
+                    <h3 class="text-hours">Open Hours</h3>
+                    {% for item in page.open-times %}
+                    <p class="days editable">
+                        {{item.days}}
+                    </p>
+                    <p class="times editable">
+                        {{item.times}}
+                    </p>  
+                    {% endfor %}
+                </div>    
             </div>
         </section>
 
