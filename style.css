@@ -58,6 +58,11 @@ end temporary style*/
     font-size:0.8rem;   
 }
 
+.capped-width-lg {
+    max-width: 1400px;
+    margin: auto;
+}
+
 span        {display: block;}
 
 .tall-10    {min-height:10vh;   }
