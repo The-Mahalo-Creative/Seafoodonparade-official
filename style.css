@@ -128,7 +128,26 @@ h1 span{
     font-family:'Roboto', 'raleway', sans-serif;
     padding-top: 0;
     display: block;
-    margin-right:-0.8em;
+    font-weight: 500;
+    font-size:.65em;
+    line-height: 0.8;
+    color:#FA6107;
+    text-transform: lowercase;
+    opacity:1;
+}
+.mobile-menu .seafood {padding-top: 18%;}
+.mobile-menu p {
+    font-family:'Raleway', 'roboto', sans-serif;
+    font-weight: 200;
+    font-size:3.5em;
+    color:white;
+    line-height: 0.8;
+    text-transform: uppercase;  
+} 
+.mobile-menu p span {
+    font-family:'Roboto', 'raleway', sans-serif;
+    padding-top: 0;
+    display: block;
     font-weight: 500;
     font-size:.65em;
     line-height: 0.8;
@@ -291,43 +310,50 @@ footer a{
 
 .hidden{display:none;}
 
+/* MOBILE menu */
 .hamburger-button {
     cursor: pointer;
     padding: 1rem 1.5rem;
     display: inline-block;
     font-weight: 200;
-    font-size: 2.5rem;
+    font-size: 2rem;
     line-height: 0.8;
     z-index: 2;
 }
 
-.hamburger-button.active {
+.hamburger-button:hover {
     color: white;
 }
-
+.hamburger-button.active {
+    color: white;
+    position: relative;
+    z-index: 2;
+}
 
 .mobile-menu {
     display: none; 
     background-color: lightblue; 
     padding: 5%;
-    position: fixed; 
+    position: absolute; 
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     text-align: center;
+    background-color: #158981;
 }
 
 
 .mobile-menu a {
     text-decoration: none; 
-    color: inherit; 
-    padding: 5vh 5%;
+    color: white; 
+    font-family: 'Raleway', 'roboto', sans-serif;
+    padding: 1.5rem 5%;
     display: block;
     font-weight: normal;
     font-size: 1.5rem;
 }
-
+.mobile-menu a:hover {color: #fb7120;}
 /* Default Responsive Styles (Dekstop and below) */
 .show-sm {
     display: none; 

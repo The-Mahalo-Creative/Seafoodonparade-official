@@ -41,19 +41,22 @@ seo:
                         <a href="#map">Contact</a>
                     </nav>  
                 </div>   
+                
                 <div class="col-12 right show-sm">
                     <a class="hamburger-button"> &#9776; </a>
                 </div>
 
                 <div class="col-5_sm-12 right sm-center">
-                <h1 class="seafood">Seafood <span class="text-orange">on parade</span></h1>   
+                    <h1 class="seafood">Seafood <span class="text-orange">on parade</span></h1>   
                 </div>
-                <div class="col-6_sm-0"></div>
+                <div class="col-6_sm-0 hide-sm"></div>
             </div>
         </header>
     
-        <div class="mobile-menu"> 
-            <nav> 
+        <div class=""> 
+            
+            <nav class="mobile-menu bg-dark padded"> 
+            <p class="seafood">Seafood <span class="text-orange">on parade</span></p>   
                 <a href="#about"> About </a>
                 <a href="#hours"> Hours </a>
                 {% if page.now-hiring == true %}
@@ -62,6 +65,8 @@ seo:
                 <a href="#map">Contact</a>
             </nav>
         </div> 
+
+
         <!----About Us---->
         <section class="grid-center padded capped-width" id="about">
             <div class="col-6_lg-5_md-12-middle about">
