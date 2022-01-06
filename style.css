@@ -57,7 +57,10 @@ end temporary style*/
     opacity:0.8;
     font-size:0.8rem;   
 }
-
+.capped-width {
+    max-width: 1200px;
+    margin: auto;
+}
 .capped-width-lg {
     max-width: 1400px;
     margin: auto;
@@ -74,6 +77,7 @@ span        {display: block;}
 .tall-70    {min-height:70vh;   }
 .tall-80    {min-height:80vh;   }
 .tall-90    {min-height:90vh;   }
+.tall-95    {min-height:95vh;   }
 
 .text-lg    {font-size: 3.5rem; }
 .text-xl    {font-size: 5rem;   }
