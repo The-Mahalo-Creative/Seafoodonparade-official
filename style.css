@@ -23,7 +23,9 @@ Font:
 
 img{max-width: 100%;}
 
-[class*=grid]{margin:0;}
+/* Optional padding to override default gridlex columns */ 
+[class*="grid-"], [class*="grid_"], [class~="grid"] { margin:0;}
+[class*="col"]                                      { padding:0;}
 
 html{scroll-behavior: smooth;}
 
@@ -84,7 +86,8 @@ span        {display: block;}
 .text-xxl   {font-size: 6rem;   }
 
 /*Typography*/
-.light-text{color: white;}
+.light-text  {color: white;}
+.text-orange { color:#FA6107}
 
 h1,h2,h3,h4,h5,h5{
     font-family:'Raleway', 'roboto', sans-serif;
@@ -215,6 +218,17 @@ h4{
 
 } 
 /*header and footer*/
+.text-menu nav a {
+  padding:1rem 0 1rem 1.5rem;
+  font-weight: 400;
+  font-family:'Raleway', 'roboto', sans-serif;
+  margin:0 0.5rem;
+  color:white;
+  text-transform: uppercase;
+  display:inline-block;
+}
+.text-menu nav a:hover {color: #fb7120;}
+
 footer   {text-align: left;  } 
 
 footer a{
@@ -226,6 +240,7 @@ footer a{
 /*Images and backgrounds*/
 .arch{
     border-radius: 40rem 40rem 0rem 0rem ;
+    padding-bottom:100%;
 }
 
 .icon{padding:5%}
@@ -276,6 +291,48 @@ footer a{
 
 .hidden{display:none;}
 
+.hamburger-button {
+    cursor: pointer;
+    padding: 1rem 1.5rem;
+    display: inline-block;
+    font-weight: 200;
+    font-size: 2.5rem;
+    line-height: 0.8;
+    z-index: 2;
+}
+
+.hamburger-button.active {
+    color: white;
+}
+
+
+.mobile-menu {
+    display: none; 
+    background-color: lightblue; 
+    padding: 5%;
+    position: fixed; 
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+
+.mobile-menu a {
+    text-decoration: none; 
+    color: inherit; 
+    padding: 5vh 5%;
+    display: block;
+    font-weight: normal;
+    font-size: 1.5rem;
+}
+
+/* Default Responsive Styles (Dekstop and below) */
+.show-sm {
+    display: none; 
+}
+
 /*Max 1440px	_custom-header-break*/
 @media (max-width: 90em){
     .seafood    {font-size:6em;}
@@ -283,15 +340,14 @@ footer a{
 /*	Max 1280px	_lg-*/
 @media (max-width: 80em){
     .seafood    {font-size:4.7em;}
-    h1 span    {font-size:.7em;}
+    h1 span     {font-size:.7em;}
 }
 
 /*Max 1024px	_md-  */
 @media (max-width: 64em){
     .seafood{
         font-size:4em;
-        margin-right:-0.6em;
-        padding-top: 90%;
+        padding-top: 30%;
     }
     .arch{
         border-radius: 30rem 30rem 0rem 0rem ;
@@ -309,9 +365,12 @@ footer a{
 
 /*Max 768px	_sm*/
 @media (max-width: 48em){
+    .show-sm          { display: block;    }
+    .hide-sm          { display: none;     }
+    .sm-center        { text-align: center;}
     .seafood{
         font-size:3.5em;
-        padding-top:80%;
+        padding-top:30%;
     }
     h4{font-size: 1rem;}
     h3{font-size:1.3rem ;}
@@ -333,7 +392,7 @@ footer a{
 @media (max-width: 36em){
     .seafood{
         font-size:3.25em;
-        padding-top:70%;
+        padding-top:30%;
     }
 
     .about h2{padding:0.6rem 0 0.6rem 0;}
@@ -378,8 +437,6 @@ footer a{
 
 /*Max 464px	_xxs*/
 @media (max-width: 29em){
-    .seafood{margin-right:-1.5em;}
-    h1 span{margin-right:-.5em;}
 }
 
 /*Max 352px	_xxxs*/

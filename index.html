@@ -29,15 +29,41 @@ seo:
 ---
 
 <!----Top header---->
-        <header class="grid-center bg-image bg-header1 tall-95 ">
-            <div class="col-5_sm-6_xs-8 right">
-            <h1 class="seafood">Seafood <span>on parade</span></h1>   
+        <header class="bg-image bg-header1 tall-95 ">
+            <div class="capped-width grid-center">
+                <div class="col-12 tall-10 text-menu hide-sm">
+                    <nav class="right padded-1 padded-r "> 
+                        <a href="#about"> About </a>
+                        <a href="#hours"> Hours </a>
+                        {% if page.now-hiring == true %}
+                            <a href="#hiring">Hiring</a>
+                        {% endif %}
+                        <a href="#map">Contact</a>
+                    </nav>  
+                </div>   
+                <div class="col-12 right show-sm">
+                    <a class="hamburger-button"> &#9776; </a>
+                </div>
+
+                <div class="col-5_sm-12 right sm-center">
+                <h1 class="seafood">Seafood <span class="text-orange">on parade</span></h1>   
+                </div>
+                <div class="col-6_sm-0"></div>
             </div>
-            <div class="col-6_sm-6_xs-4"></div>
         </header>
-        
+    
+        <div class="mobile-menu"> 
+            <nav> 
+                <a href="#about"> About </a>
+                <a href="#hours"> Hours </a>
+                {% if page.now-hiring == true %}
+                    <a href="#hiring">Hiring</a>
+                {% endif %}
+                <a href="#map">Contact</a>
+            </nav>
+        </div> 
         <!----About Us---->
-        <section class="grid-center padded capped-width">
+        <section class="grid-center padded capped-width" id="about">
             <div class="col-6_lg-5_md-12-middle about">
                 <h2 class="center">About Us</h2>
                 <p class="editable">
@@ -50,13 +76,13 @@ seo:
                     Large orders, special requests and phone orders are most welcome.
                 </p>
             </div>
-            <div class="col-6_lg-7_md-12">
+            <div class="col-6_lg-7_md-12" >
                 <div class="bg-image bg-family arch tall-50"></div>
             </div>
         </section>
 
         <!---icon grid---->
-        <section class=" bg-dark center light-text icon ">
+        <section class=" bg-dark center light-text icon" id="why-us">
             <div class="capped-width">
             <div class="grid-center tall-50 icon-grid">    
                 <div class="col-4_sm-12 padded-2">
@@ -83,7 +109,7 @@ seo:
         </section>
 
         <!---Hours---->
-        <section class="grid bg-light">
+        <section class="grid bg-light" id="hours">
             <div class="bg-image bg-hours col-7_xs-12 tall-70"></div>
             <div class="col-5_xs-12-middle grid">
                 <div class="col-9_lg-11_sm-12 bg-dark padded hours light-text center">
@@ -107,7 +133,7 @@ seo:
         {% endif %}
 
         <!---Map---->
-        <section class="grid tall-60">
+        <section class="grid tall-60" id="map">
             <div class="col-12 bg-image bg-map"></div>
         </section>
 
