@@ -51,6 +51,9 @@ end temporary style*/
 .padded-2       {padding:2rem}
 .padded-b-0     {padding-bottom:0%;}
 
+.padded-l       { padding-left: 5%;}
+.padded-l-1     { padding-left: 1rem;}
+
 .left       {text-align: left;  }
 .center     {text-align: center;}
 .right      {text-align: right; }
