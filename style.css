@@ -400,7 +400,7 @@ footer a{
     .sm-center        { text-align: center;}
     .seafood{
         font-size:3.5em;
-        padding-top:30%;
+        padding-top:20%;
     }
     h4{font-size: 1rem;}
     h3{font-size:1.3rem ;}
@@ -422,7 +422,7 @@ footer a{
 @media (max-width: 36em){
     .seafood{
         font-size:3.25em;
-        padding-top:30%;
+        padding-top:20%;
     }
 
     .about h2{padding:0.6rem 0 0.6rem 0;}
