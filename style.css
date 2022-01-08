@@ -325,9 +325,6 @@ footer a{
     z-index: 2;
 }
 
-.hamburger-button:hover {
-    color: white;
-}
 .hamburger-button.active {
     color: white;
     position: relative;
