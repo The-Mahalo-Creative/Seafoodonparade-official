@@ -91,7 +91,7 @@ span        {display: block;}
 
 /*Typography*/
 .light-text  {color: white;}
-.text-orange { color:#FA6107}
+.text-orange { color: var(--orange-text)}
 
 h1,h2,h3,h4,h5,h5{
     font-family:'Raleway', 'roboto', sans-serif;
@@ -116,14 +116,14 @@ h1,h2,h3,h4,h5,h6:last-child{
 a{
     text-decoration: none;
     font-size: 1.2rem;
-    color:#fd8139;
+    color: var(-lorange-text);
     transition:all 0.2s;
 }
 
 h1{
     font-weight: 200;
     font-size:7em;
-    color:white;
+    color:var(--light-text);
     line-height: 0.8;
     text-transform: uppercase;
 }
@@ -135,7 +135,7 @@ h1 span{
     font-weight: 500;
     font-size:.65em;
     line-height: 0.8;
-    color:#FA6107;
+    color: var(--orange-text);
     text-transform: lowercase;
     opacity:1;
 }
@@ -144,7 +144,7 @@ h1 span{
     font-family:'Raleway', 'roboto', sans-serif;
     font-weight: 200;
     font-size:3.5em;
-    color:white;
+    color:var(--light-text);
     line-height: 0.8;
     text-transform: uppercase;  
 } 
@@ -155,7 +155,7 @@ h1 span{
     font-weight: 500;
     font-size:.65em;
     line-height: 0.8;
-    color:#FA6107;
+    color:var(--orange-text);
     text-transform: lowercase;
     opacity:1;
 }
@@ -165,7 +165,7 @@ h1 span{
     font-weight: 500;
     font-size:3em;
     line-height: 0.8;
-    color:#FA6107;
+    color:var(--orange-text);
     text-transform: uppercase;
 }
 
@@ -187,17 +187,17 @@ h4{
     font-size:1.5rem;
     text-transform: uppercase;
     font-weight: bold;
-    color:#FA6107;
+    color:var(--orange-text);
 }
 
 .about p    {
-    color:rgb(90, 90, 90);
+    color:var(--grey);
     padding-right:5%;
 }
 .about h2{
     padding-top:2rem;
     padding-bottom: 2rem;
-    color:#0e5c5d;
+    color:var(--featured-text);
 }
 
 .text-hire h2{
@@ -246,18 +246,18 @@ h4{
   font-weight: 400;
   font-family:'Raleway', 'roboto', sans-serif;
   margin:0 0.5rem;
-  color:white;
+  color: var(--light-text);
   text-transform: uppercase;
   display:inline-block;
 }
-.text-menu nav a:hover {color: #fb7120;}
+.text-menu nav a:hover {color: var(--lorange-text);}
 
 footer   {text-align: left;  } 
 
 footer a{
     text-decoration: none;
     font-size: 1.2rem;
-    color:#FA6107;
+    color:var(--orange-text);
 }
 
 /*Images and backgrounds*/
@@ -283,14 +283,14 @@ footer a{
     padding:10% 0% 10% 0%;
 }
 
-.bg-light{background-color: #E7F8F7;}
-.bg-dark{background-color: #158981;}
-.bg-darker{background-color: #0f5c5d;}
+.bg-light{background-color: var(--blue);}
+.bg-dark{background-color: var(--dark);}
+.bg-darker{background-color: var(--darker);}
 
 .bg-image{
     background-position: center;
     background-size: cover;
-    background-color: #158981;
+    background-color: var(--dark);
     background-repeat: no-repeat;
     background-image: url(/Images/fish.jpg);
 }
@@ -326,14 +326,13 @@ footer a{
 }
 
 .hamburger-button.active {
-    color: white;
+    color: var(--light-text);
     position: relative;
     z-index: 2;
 }
 
 .mobile-menu {
     display: none; 
-    background-color: lightblue; 
     padding: 5%;
     position: absolute; 
     top: 0;
@@ -341,20 +340,20 @@ footer a{
     left: 0;
     right: 0;
     text-align: center;
-    background-color: #158981;
+    background-color: var(--dark);
 }
 
 
 .mobile-menu a {
     text-decoration: none; 
-    color: white; 
+    color:var(--light-text); 
     font-family: 'Raleway', 'roboto', sans-serif;
     padding: 1.5rem 5%;
     display: block;
     font-weight: normal;
     font-size: 1.5rem;
 }
-.mobile-menu a:hover {color: #fb7120;}
+.mobile-menu a:hover {color: var(--lorange-text);}
 /* Default Responsive Styles (Dekstop and below) */
 .show-sm {
     display: none; 
@@ -442,8 +441,8 @@ footer a{
     .hidden-small{display: none;}
 
     .bg-blue{
-        background-color:white;
-        color:#0e5c5d;
+        background-color: var(--light-text);
+        color:var(--featured-text);
     }   
 
     .hire-contact p{padding-bottom:0;}
