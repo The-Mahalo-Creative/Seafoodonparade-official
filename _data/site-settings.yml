@@ -3,11 +3,11 @@ seo:
   title: Seafood On Parade
   description: A local seafood company operating in the Norwood area for many years, Peter and Koula have a loyal customer base thanks to their friendly service and the freshness of the seafood. Now trading as Seafood on Parade, their commitment to providing an excellent range of fresh seafood is as strong as ever. Whether it’s fish, oysters, prawns or lobster, you can be assured of the quality.
   keywords:
-  social_image: 
+  social_image: /images/social-sharing.png
   favicon_image: 
 _comments:
   title: Max 70 characters
-  social_image: Landscape 1200 x 627px
+  social_image: Landscape 1200 x 627px (twitter 280px x 80px make sure okay to crop)
 social:
   instagram_username:
   facebook_url:
