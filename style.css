@@ -413,7 +413,6 @@ footer a{
 
 /*Max 576px	_xs*/
 @media (max-width: 36em){
-    .banner_image {background-image: url('/images/seafood_on_parade_mobile.jpg');}
     .seafood{
         font-size:3.25em;
     }

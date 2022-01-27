@@ -3,6 +3,7 @@ layout: default
 title: Seafood on Parade
 now-hiring: true
 banner_image: /images/seafood_on_parade.jpg
+banner-mobile_image: /images/seafood_on_parade_mobile.jpg
 open-times:
    -
       days: Mon - Wed
@@ -37,7 +38,7 @@ seo:
 ---
 
 <!----Top header---->
-        <header class="bg-image tall-95" style="background-image: url('{{page.banner_image}}');">
+        <header class="bg-image tall-95 home-banner-image">
             <div class="capped-width grid-center">
                 <div class="col-12 tall-10 text-menu hide-sm">
                     <nav class="right padded-1 padded-r "> 
@@ -48,8 +49,7 @@ seo:
                         {% endif %}
                         <a href="#map">Contact</a>
                     </nav>  
-                </div>   
-                
+                </div>                   
                 <div class="col-12 right show-sm">
                     <a class="hamburger-button"> &#8801; </a>
                 </div>
@@ -60,6 +60,13 @@ seo:
                 <div class="col-6_sm-0 hide-sm"></div>
             </div>
         </header>
+
+        <style> 
+            .home-banner-image {background-image: url('{{page.banner_image}}');}         
+            @media(max-width:36em) {
+               .home-banner-image {background-image: url('{{page.banner-mobile_image}}');}
+            }
+         </style> 
             
         <nav class="mobile-menu bg-dark padded"> 
             <p class="seafood">Seafood <span class="text-orange">on parade</span></p>   
@@ -96,7 +103,7 @@ seo:
             <div class="capped-width">
             <div class="grid-center tall-50 icon-grid">    
                 <div class="col-4_sm-12 padded-2">
-                    <img src="/Images/fresh-produce.png" alt="fresh produce" />
+                    <img src="/images/fresh-produce.png" alt="fresh produce" />
                     <h3 class="editable">
                         Fresh Produce
                     </h3> 
@@ -105,13 +112,13 @@ seo:
                    </p>     
                 </div>
                 <div class="col-4_sm-12 bg-blue padded-2">
-                    <img src="/Images/sustainable-fish.png" class="hidden-small" alt="sustainable fish" />
-                    <img src="/Images/blue-sustainable-fish.png" class="hidden" alt="sustainable fish" />
+                    <img src="/images/sustainable-fish.png" class="hidden-small" alt="sustainable fish" />
+                    <img src="/images/blue-sustainable-fish.png" class="hidden" alt="sustainable fish" />
                     <h3 class="editable">Largest Range</h3>
                     <p class="editable">With a huge range of fresh seafood including fish fillets, raw and cooked prawns, fresh oysters, crabs and more, we guarantee to have something for you. Looking for something a little different? Special requests are most welcome and we will always do our best to accommodate you.</p>
                 </div>
                 <div class="col-4_sm-12 padded-2">
-                    <img src="/Images/family.png" alt="family business" />
+                    <img src="/images/family.png" alt="family business" />
                     <h3 class="editable">Family Owned</h3>
                     <p class="editable">Peter and Koula are brother and sister who took inspiration from their late father George, a fisherman back in homeland Greece, to provide the public with the freshest seafood. Proudly serving the community for over 20 years, providing exceptional service and seafood.</p>
                 </div></div>
