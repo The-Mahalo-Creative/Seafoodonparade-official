@@ -292,23 +292,20 @@ footer a{
     background-size: cover;
     background-color: var(--dark);
     background-repeat: no-repeat;
-    background-image: url(/Images/fish.jpg);
+    background-image: url(/images/fish.jpg);
 }
 
 .bg-hours{
-    background-image: url(/Images/fish.jpg);
+    background-image: url(/images/fish.jpg);
     background-position: 50% 75% ;}
 .bg-hire{
-    background-image: url(/Images/now_hiring.jpg);
+    background-image: url(/images/now_hiring.jpg);
     background-position: 40% 20% ;}
 .bg-map{
-    background-image: url(/Images/Map_norwood.png);
+    background-image: url(/images/Map_norwood.png);
     background-position: 100% 50% ;
 }
-.bg-header1{
-    background-image: url(/Images/seafood_on_parade.jpg);
-}
-.bg-family{background-image: url(/Images/family.jpg);}
+.bg-family{background-image: url(/images/family.jpg);}
 
 
 
@@ -416,6 +413,7 @@ footer a{
 
 /*Max 576px	_xs*/
 @media (max-width: 36em){
+    .banner_image {background-image: url('/images/seafood_on_parade_mobile.jpg');}
     .seafood{
         font-size:3.25em;
     }
