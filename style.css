@@ -294,7 +294,9 @@ footer a{
     background-repeat: no-repeat;
     background-image: url(/images/fish.jpg);
 }
-
+.home-banner-image {
+    background-position: 50% 65%;
+}
 .bg-hours{
     background-image: url(/images/fish.jpg);
     background-position: 50% 75% ;}
