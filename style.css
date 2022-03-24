@@ -61,7 +61,8 @@ end temporary style*/
 
 .subtle{
     opacity:0.8;
-    font-size:0.8rem;   
+    font-size:0.9rem;   
+    color: black;
 }
 .capped-width {
     max-width: 1200px;
@@ -307,7 +308,7 @@ footer a{
     background-image: url(/images/Map_norwood.png);
     background-position: 100% 50% ;
 }
-.bg-family{background-image: url(/images/family.jpg);}
+.bg-family{background-image: url(/images/george1.jpg);}
 
 
 
