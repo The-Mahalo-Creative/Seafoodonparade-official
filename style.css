@@ -53,6 +53,7 @@ end temporary style*/
 
 .padded-l       { padding-left: 5%;}
 .padded-b       { padding-bottom: 5%;}
+.padded-t-1     { padding-top: 1rem;}
 .padded-l-1     { padding-left: 1rem;}
 .padded-r-0 {padding-right: 0 ;}
 .left       {text-align: left;  }
@@ -62,7 +63,7 @@ end temporary style*/
 .subtle{
     opacity:0.8;
     font-size:0.9rem;   
-    color: black;
+    color: #0e5c5d;
 }
 .capped-width {
     max-width: 1200px;
