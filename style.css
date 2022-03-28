@@ -50,12 +50,14 @@ end temporary style*/
 .padded-1       {padding:1rem}
 .padded-2       {padding:2rem}
 .padded-b-0     {padding-bottom:0%;}
+.padded-l-0     {padding-left: 0;}
+.padded-r-0     {padding-right: 0 ;}
 
 .padded-l       { padding-left: 5%;}
 .padded-b       { padding-bottom: 5%;}
 .padded-t-1     { padding-top: 1rem;}
 .padded-l-1     { padding-left: 1rem;}
-.padded-r-0 {padding-right: 0 ;}
+
 .left       {text-align: left;  }
 .center     {text-align: center;}
 .right      {text-align: right; }
