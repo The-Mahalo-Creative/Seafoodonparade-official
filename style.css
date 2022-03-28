@@ -54,7 +54,7 @@ end temporary style*/
 .padded-l       { padding-left: 5%;}
 .padded-b       { padding-bottom: 5%;}
 .padded-l-1     { padding-left: 1rem;}
-
+.padded-r-0 {padding-right: 0 ;}
 .left       {text-align: left;  }
 .center     {text-align: center;}
 .right      {text-align: right; }
@@ -371,6 +371,8 @@ footer a{
 
 /*Max 1024px	_md-  */
 @media (max-width: 64em){
+    .padded-r-md         { padding-right: 5%;}
+    .padded-t-0-md       { padding-top: 0;}
     .seafood{
         font-size:4em;
         padding-top: 30%;
@@ -394,6 +396,7 @@ footer a{
     .show-sm          { display: block;    }
     .hide-sm          { display: none;     }
     .sm-center        { text-align: center;}
+    
     .seafood{
         font-size:3.5em;
         padding-top:25%;
@@ -416,15 +419,13 @@ footer a{
 
 /*Max 576px	_xs*/
 @media (max-width: 36em){
+    .padded-0-xs    {padding: 0 0 0 0;}
+    .padded-b-xs    { padding-bottom: 5%;}
     .seafood{
         font-size:3.25em;
     }
 
     .about h2{padding:0.6rem 0 0.6rem 0;}
-    .about{
-        padding-left:5%;
-        padding-right: 5%;
-    }
     .text-hire p{
         padding-left:5%;
         padding-right: 5%;
