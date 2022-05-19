@@ -3,12 +3,12 @@
  <meta name="description" content="{{ page.seo.description | default: site.data.site-settings.seo.description }}">
  <meta name="keywords" content="{{ page.seo.keywords | default: site.data.site-settings.seo.keywords }}">
 
- {% if page.seo.hide-from-google == true %}
+<!--  {% if page.seo.hide-from-google == true %}
      <meta name="robots" content="noindex, nofollow">
  {% else %}
      <meta name="robots" content="index, follow">
- {% endif %}
-
+ {% endif %} -->
+ <meta name="robots" content="index, follow">
  <!-- Viewport meta tag --> 
  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
