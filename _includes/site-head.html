@@ -1,22 +1,24 @@
+
+ <title>{{page.title}}</title>
+  <!-- Viewport meta tag --> 
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta charset="utf-8">
+
  <!--------------------- SEO Metadata ----------------------->
- <title> {{ page.seo.title | default: site.data.site-settings.seo.title }} </title> 
- <meta name="description" content="{{ page.seo.description | default: site.data.site-settings.seo.description }}">
+ <title> {{ page.seo.title | default: site.data.site-settings.seo.title }} </title>  <meta name="description" content="{{ page.seo.description | default: site.data.site-settings.seo.description }}">
  <meta name="keywords" content="{{ page.seo.keywords | default: site.data.site-settings.seo.keywords }}">
 
-<!--  {% if page.seo.hide-from-google == true %}
+{% if page.seo.hide-from-google == true %}
      <meta name="robots" content="noindex, nofollow">
  {% else %}
      <meta name="robots" content="index, follow">
- {% endif %} -->
- <meta name="robots" content="index, follow">
- <!-- Viewport meta tag --> 
- <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ {% endif %}
+
 
  <!-- meta data to tell the browser that your device is responsive 
- <meta name="robots" content="index, follow" />-->
+ <meta name="robots" content="index, follow" />
  <meta name="mobile-web-app-capable" content="yes" />
  <meta name="apple-mobile-web-app-capable" content="yes" />
- <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+ <meta name="apple-mobile-web-app-status-bar-style" content="default" />-->
 
 <!------------  Social media sharing META Tags ------------>
 <meta property="og:title" content="{{ page.title | default: site.data.site-settings.seo.title }}">
@@ -28,7 +30,8 @@
 <meta name="twitter:card" content="{{ page.seo.twitter_card | default: site.data.site-settings.seo.twitter_card }}">
 <meta name="og:site_name" content="{{ site.data.site-settings.seo.site_name }}">
 <link rel="icon" type="image/png" href="{{ site.data.site-settings.seo.favicon_image }}">
-
+<!------------ Pinterest Meta Tags ------------>
+<meta property="article:author" content="{{ page.author | default: site.seo.author }}" />
 
 <!-- FAVICON -->
 <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
