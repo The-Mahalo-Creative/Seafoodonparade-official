@@ -5,16 +5,21 @@ now-hiring: true
 banner_image: /images/seafood_on_parade.jpg
 banner-mobile_image: /images/seafood_on_parade_mobile.jpg
 open-times:
- - days: Mon - Wed
-   times: 8am - 5.30pm
- - days: Thurs
-   times: 8am - 9pm
- - days: Fri
-   times: 8am - 5.30pm
- - days: Sat
-   times: 8am - 5.00pm
- - days: Sun
-   times: 11am - 5.00pm
+   -
+      days: Mon - Wed
+      times: 8am - 5.35pm
+   -
+      days: Thurs
+      times: 8am - 9pm
+   -
+      days: Fri
+      times: 8am - 5.30pm
+   -
+      days: Sat
+      times: 8am - 5.00pm
+   -
+      days: Sun
+      times: 11am - 5.00pm
 seo:
    title: Seafood on Parade
    description:
@@ -133,10 +138,10 @@ seo:
                     <h3 class="text-hours">Opening Hours</h3>
                     {% for item in page.open-times %}
                     <p class="days editable">
-                        {{item.days}}
+                        Sun
                     </p>
                     <p class="times editable">
-                        {{item.times}}
+                        11am - 5.00pm
                     </p>  
                     {% endfor %}
                 </div>    
