@@ -145,10 +145,10 @@ seo:
                     <h3 class="text-hours">Opening Hours</h3>
                     {% for item in page.open-times %}
                     <p class="days editable">
-                        Sun
+                        {{item.days}}
                     </p>
                     <p class="times editable">
-                        11am - 5.00pm
+                        {{item.times}}
                     </p>  
                     {% endfor %}
                 </div>    
